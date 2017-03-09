@@ -1,0 +1,13 @@
+{
+  "name": "jcdeguer-simple_nodejs",
+  "version": "0.1.0",
+  "author": "jcdeguer",
+  "summary": "Clase encargada de instalar y configurar NodeJS para CentOS 7.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/jcdeguer/simple_nodejs",
+  "project_page": "https://github.com/jcdeguer/simple_nodejs",
+  "issues_url": "https://github.com/jcdeguer/simple_nodejs/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
