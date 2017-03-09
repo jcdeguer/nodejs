@@ -9,10 +9,10 @@ Clase de Puppet encargada de instalar y configurar NodeJS para CentOS 7.
     * [Beginning with simple_nodejs](#beginning-with-simple_nodejs)
 4. [Limitations - OS compatibility, etc.](#limitations)
 
-### What simple_motd affects
+### What simple_nodejs affects
 The simple_nodejs class it's a solution to install and configure NodeJS into CentOS 7 servers, creating needed users to run and installing oracle-instantclient from a localrepository defined on parameters, and at last the OracleDB node's module using npm.
 
-### Beginning with simple_motd
+### Beginning with simple_nodejs
 To be used just need to place the simple_nodejs folder on your Puppet's module folder, import the class and it's ready to be used.
 
 ## Limitations
