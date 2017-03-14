@@ -10,3 +10,6 @@
 # http://docs.puppetlabs.com/guides/tests_smoke.html
 #
 include nodejs
+class {'nodejs':
+
+}
