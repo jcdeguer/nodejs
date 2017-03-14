@@ -1,4 +1,4 @@
-class nodejs_for_el7::install_oic inherits nodejs_for_el7::params {
+class nodejs::install_oic inherits nodejs::params {
   package { $version_gcc:
         ensure => 'installed'
   }
