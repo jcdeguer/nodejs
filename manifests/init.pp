@@ -51,22 +51,13 @@ class nodejs
   include nodejs::group_add
   include nodejs::user_add
   include nodejs::config
+  include nodejs::prerequisitos
 
   Class['nodejs::install_nodejs']
   -> Class['nodejs::install_oic']
-  -> Exec ['crea_rsync_shell_file_vacio']
-  -> Exec ['prefixs']
+  -> Class['nodejs::prerequisitos']
   -> Class['nodejs::group_add']
   -> Class['nodejs::user_add']
   -> Class['nodejs::config']
 
-  exec { 'crea_rsync_shell_file_vacio':
-        command => '/usr/bin/touch /usr/local/bin/rsync_shell.pl',
-  }->
-  exec { 'mod_rsync_shell_file':
-        command => '/usr/bin/chmod +x /usr/local/bin/rsync_shell.pl',
-  }
-  exec { 'prefixs':
-        command => '/usr/bin/npm config set prefix "/apps-node/.npm-global/" && /usr/bin/npm config set proxy="http://10.75.100.100:3128"',
-  }
 }
