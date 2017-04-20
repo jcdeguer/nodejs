@@ -6,6 +6,6 @@ class nodejs::prerequisitos inherits nodejs::params {
     command => '/usr/bin/chmod +x /usr/local/bin/rsync_shell.pl',
   }
   exec { 'prefixs': # Setea el prefix y el proxy en npm.
-    command => '/usr/bin/npm config set prefix "/apps-node/.npm-global/" && /usr/bin/npm config set proxy="http://IP_PROXY:PUERTO_PROXY"',
+    command => '/usr/bin/npm config set prefix "/node/.npm-global/" && /usr/bin/npm config set proxy="http://IP_PROXY:PUERTO_PROXY"',
   }
 }
