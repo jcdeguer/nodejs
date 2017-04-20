@@ -29,7 +29,6 @@ class nodejs
   $rsync_ssh_key                        = $::nodejs::params::rsync_ssh_key,
   $dir_deploy_test_app                  = $::nodejs::params::dir_deploy_test_app,
   $bash_profile                         = $::nodejs::params::bash_profile,
-  $init_test_app                        = $::nodejs::params::init_test_app,
   $archivo_sudoers                      = $::nodejs::params::archivo_sudoers,
   $dir_mod_npm                          = $::nodejs::params::dir_mod_npm,
   $usuario_rsync                        = $::nodejs::params::usuario_rsync,
