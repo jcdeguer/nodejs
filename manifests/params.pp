@@ -18,7 +18,6 @@ class nodejs::params {
   $rsync_ssh_key                        = '/home/rsync/.ssh/authorized_keys'
   $dir_deploy_test_app                  = '/node/deploys/node-test/app.js'
   $bash_profile                         = '/node/.bash_profile'
-  $init_test_app                        = '/etc/init.d/node-test'
   $archivo_sudoers                      = '/etc/sudoers'
   $dir_mod_npm                          = '/node/.npm-global/lib/'
   $npmrc                                = '/node/.npmrc'
