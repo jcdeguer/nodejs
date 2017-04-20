@@ -1,7 +1,7 @@
 class nodejs::group_add inherits nodejs::params {
   group { $grupo_rsync:
         ensure => 'present',
-        gid    => '10000',
+        gid    => '9999',
   }
   group { $grupo_nodejs:
         ensure => 'present',
